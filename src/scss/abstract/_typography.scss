@@ -1,0 +1,42 @@
+:root {
+  /* ------------------------------ */
+  /* ---  Font Family Variables --- */
+  /* ------------------------------ */
+  --ff-lato: "Lato", sans-serif;
+  --ff-roboto: "Roboto", sans-serif;
+
+  /* ------------------------------ */
+  /* ---  Font Size Variables ----- */
+  /* ------------------------------ */
+  --font-size-200: 0.875rem;
+  --font-size-300: 1rem;
+  --font-size-400: 0.9375rem;
+  --font-size-500: 1rem;
+  --font-size-600: 1rem;
+  --font-size-700: 1.5rem;
+  --font-size-800: 3.5rem;
+  --font-size-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+
+  /* ------------------------------ */
+  /* ---  Responsive Font Sizes --- */
+  /* ------------------------------ */
+  @media (width >= 35em) {
+    :root {
+      --font-size-400: 1rem;
+      --font-size-500: 1.25rem;
+      --font-size-600: 1.5rem;
+      --font-size-700: 2.5rem;
+      --font-size-800: 5rem;
+    }
+  }
+
+  @media (width >= 45em) {
+    :root {
+      --font-size-400: 1.125rem;
+      --font-size-500: 1.75rem;
+      --font-size-600: 2rem;
+      --font-size-700: 3.5rem;
+      --font-size-800: 6.25rem;
+    }
+  }
+}

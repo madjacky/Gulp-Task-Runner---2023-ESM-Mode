@@ -1,0 +1,60 @@
+/* Import Abstracts */
+@import
+  'abstract/variables',
+  'abstract/colors',
+  'abstract/dark-theme',
+  'abstract/typography',
+  'abstract/breakpoints',
+  'abstract/burger',
+  'abstract/checkbox',
+  'abstract/display',
+  'abstract/flex-layout',
+  'abstract/font-face',
+  'abstract/functions',
+  'abstract/mixins',
+  'abstract/radio-tabs',
+  'abstract/radio',
+  'abstract/switch';
+
+/* Import Vendors Styles */
+@import
+  'vendors/normalize',
+  'vendors/swiper-slide';
+
+/* Import Base Styles */
+@import
+  'base/base-reset',
+  'base/helpers',
+  'base/fonts',
+  'base/general';
+
+/* Import Utilities Styles */
+@import
+  'utilities/border-radius',
+  'utilities/box-shadow',
+  'utilities/centered',
+  'utilities/colors',
+  'utilities/containers',
+  'utilities/display',
+  'utilities/flow',
+  'utilities/font-sizes',
+  'utilities/round',
+  'utilities/uppercase';
+
+/* Import Components Styles */
+@import
+  'components/buttons',
+  'components/cards',
+  'components/form-fields',
+  'components/navigations',
+  'components/social-networks';
+
+/* Import Pages Styles Styles */
+@import
+  'pages/main-page',
+  'pages/contacts-page';
+
+/* Import Layout Styles */
+@import
+  'layout/header',
+  'layout/footer';

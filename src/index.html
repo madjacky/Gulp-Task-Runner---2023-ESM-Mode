@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" class="page" data-theme="">
+@include('html/head.html')
+<body class="page__body">
+  <div class="site-container">
+    @include('html/header.html')
+    <main class="main">
+      <picture>
+        <source srcset="img/cover.avif" type="image/avif">
+        <source srcset="img/cover.webp" type="image/webp">
+        <img loading="lazy" src="img/cover.jpeg" class="image" width="888" height="650" alt="cover">
+      </picture>
+    </main>
+    @include('html/footer.html')
+    @include('html/footer.html')
+  </div>
+</body>
+</html>

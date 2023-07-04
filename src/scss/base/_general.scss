@@ -1,0 +1,14 @@
+ /* Set core body defaults */
+ .page__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  height: var(--vh);
+  font-family: var(--ff-roboto);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
