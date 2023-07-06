@@ -1,0 +1,23 @@
+@layer utilities {
+  .shadow-sm {
+    box-shadow: var(--box-shadow-sm);
+  }
+  .shadow {
+    box-shadow: var(--box-shadow);
+  }
+  .shadow-md {
+    box-shadow: var(--box-shadow-md);
+  }
+  .shadow-lg {
+    box-shadow: var(--box-shadow-lg);
+  }
+  .shadow-xl {
+    box-shadow: var(--box-shadow-xl);
+  }
+  .shadow-2xl {
+    box-shadow: var(--box-shadow-2xl);
+  }
+  .shadow-inner {
+    box-shadow: var(--box-shadow-inner);
+  }
+}

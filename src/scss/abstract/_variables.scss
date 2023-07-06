@@ -1,34 +1,38 @@
-:root {
-  /* ------------------------------ */
-  /* -------  Base Variables ------ */
-  /* ------------------------------ */
-  --content-width: 76.875rem;
-  --content-fluid-width: 116.25rem;
-  --container-offset: .9375rem;
-  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+@layer variables {
+  :root {
+    /* ------------------------------ */
+    /* -------  Base Variables ------ */
+    /* ------------------------------ */
+    --content-width: 76.875rem;
+    --content-fluid-width: 116.25rem;
+    --container-offset: .9375rem;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
 
-  /* ------------------------------- */
-  /* -------- Gaps Variables ------- */
-  /* -----------------------------  */
-  --defaul-gap: 1.875rem;
+    /* ------------------------------- */
+    /* -------- Gaps Variables ------- */
+    /* -----------------------------  */
+    --defaul-gap: 1.875rem;
 
-  /* ---------------------------------------- */
-  /* -------- Box - Shadow Variables ------- */
-  /* -------------------------------------  */
-  --border-radius-sm: .25rem;
-  --border-radius-md: .5rem;
-  --border-radius-lg: .75rem;
-  --border-radius-xl: 1rem;
-  --border-radius-2xl: 2rem;
+    /* ---------------------------------------- */
+    /* -------- Box - Shadow Variables ------- */
+    /* -------------------------------------  */
+    --border-radius-sm: .125rem;
+    --border-radius: .25rem;
+    --border-radius--md: .375rem;
+    --border-radius--lg: .5rem;
+    --border-radius--xl: .75rem;
+    --border-radius--2xl: 1rem;
 
-  /* ---------------------------------------- */
-  /* -------- Box - Shadow Variables ------- */
-  /* -------------------------------------  */
-  --box-shadow-sm: 0 1px 2px 0 hsl(var(--black-color) / .05);
-  --box-shadow: 0 1px 3px 0 hsl(var(--black-color) / .1), 0 1px 2px -1px hsl(var(--black-color) / .1);
-  --box-shadow-md: 0 4px 6px -1px hsl(var(--black-color) / .1), 0 2px 4px -2px hsl(var(--black-color) / .1);
-  --box-shadow-lg: 0 10px 15px -3px hsl(var(--black-color) / .1), 0 4px 6px -4px hsl(var(--black-color) / .1);
-  --box-shadow-xl: 0 20px 25px -5px hsl(var(--black-color) / .1), 0 8px 10px -6px hsl(var(--black-color) / .1);
-  --box-shadow-2xl: hsl(var(--black-color) / .25);
+    /* ---------------------------------------- */
+    /* -------- Box - Shadow Variables ------- */
+    /* -------------------------------------  */
+    --box-shadow-sm: 0 .0625rem 2px 0 oklch(0% 0 0 / .05);
+    --box-shadow: 0 1px 3px 0 oklch(0% 0 0 / .1), 0 1px 2px -1px oklch(0% 0 0 / .1);
+    --box-shadow-md: 0 4px 6px -1px oklch(0% 0 0 / .1), 0 2px 4px -2px oklch(0% 0 0 / .1);
+    --box-shadow-lg: 0 10px 15px -3px oklch(0% 0 0 / .1), 0 4px 6px -4px oklch(0% 0 0 / .1);
+    --box-shadow-xl: 0 20px 25px -5px oklch(0% 0 0 / .1), 0 8px 10px -6px oklch(0% 0 0 / .1);
+    --box-shadow-2xl: 0 25px 50px -12px oklch(0% 0 0 / .25);
+    --box-shadow-inner: inset 0 2px 4px 0 oklch(0% 0 0 / .05);
+  }
 }

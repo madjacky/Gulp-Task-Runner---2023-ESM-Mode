@@ -1,0 +1,19 @@
+@layer utilities {
+  .site-container {
+    overflow: hidden;
+    // min-block-size: 100vh;
+    // min-block-size: 100dvh;
+  }
+
+  .container {
+    margin-inline: auto;
+    max-inline-size: var(--container-width);
+    padding-inline: var(--container-offset);
+  }
+
+  .container-fluid {
+    margin-inline: auto;
+    max-inline-size: var(--container-fluid-width);
+    padding-inline: var(--container-offset);
+  }
+}

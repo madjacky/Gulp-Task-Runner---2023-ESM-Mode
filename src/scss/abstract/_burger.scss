@@ -1,0 +1,29 @@
+@mixin burger-button {
+  --_burger-color: 32.11% 0 0;
+  border: .125rem solid oklch(var(--_burger-color));
+  border-radius: .25rem;
+  color: oklch(var(--_burger-color));
+
+  &__line {
+    transform-origin: center;
+    transition: y 300ms ease-in 300ms, rotate 300ms ease-in, opacity 0ms 300ms;
+  }
+
+  &[aria-expanded="true"] {
+    &__line {
+      transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+    }
+    &:is(.burger__top, .burger__bottom) {
+      y: 15;
+    }
+    &__top {
+      rotate: 45deg;
+    }
+    &__middle {
+      opacity: 0;
+    }
+    &__bottom {
+      rotate: -45deg;
+    }
+  }
+}

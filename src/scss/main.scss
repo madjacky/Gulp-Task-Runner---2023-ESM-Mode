@@ -1,3 +1,5 @@
+@layer reset.normalize, reset, vendors, base, base.fonts, base.helpers, variables, variables.colors, variables.typography, themes, layout, pages, components, utilities;
+
 /* Import Abstracts */
 @import
   'abstract/variables',
@@ -19,11 +21,11 @@
 /* Import Vendors Styles */
 @import
   'vendors/normalize',
-  'vendors/swiper-slide';
+  'vendors/vendors';
 
 /* Import Base Styles */
 @import
-  'base/base-reset',
+  'base/reset',
   'base/helpers',
   'base/fonts',
   'base/general';
@@ -37,6 +39,7 @@
   'utilities/containers',
   'utilities/display',
   'utilities/flow',
+  'utilities/font-families',
   'utilities/font-sizes',
   'utilities/round',
   'utilities/uppercase';

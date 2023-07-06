@@ -1,0 +1,46 @@
+@mixin switch {
+  --_idle-color: 77.78% 0.008 253.87;
+  --_active-color: 47.53% 0.074 196.2;
+  --_text-color: 39.23% 0.021 274.33;
+  --_text-active-color: 100% 0 0;
+  cursor: pointer;
+  user-select: none;
+
+  &__input:checked + &__caption::before {
+    background-color: oklch(var(--_active-color));
+  }
+  &__input:checked + &__caption::after {
+    transform: translateX(.75rem);
+  }
+
+  &__caption {
+    position: relative;
+    padding-inline-start: 1.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: oklch(var(--_text-color));
+    &::before {
+      content: "";
+      position: absolute;
+      inset-block-start: .1875rem;
+      inset-inline-start: 0;
+      block-size: .75rem;
+      inline-size: 1.5rem;
+      border-radius: 100vw;
+      background-color: oklch(var(--_idle-color));
+      transition: background-color 300ms ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset-block-start: .25rem;
+      inset-inline-start: .0625rem;
+      block-size: .625rem;
+      inline-size: .625rem;
+      background-color: oklch(var(--_text-active-color));
+      border-radius: 50%;
+      transition: transform 300ms linear;
+    }
+  }
+}

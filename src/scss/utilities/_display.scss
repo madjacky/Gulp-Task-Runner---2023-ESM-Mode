@@ -1,0 +1,13 @@
+@layer utilities {
+  .d-block {
+    @include d-block;
+  }
+
+  .flex {
+    @include flex;
+  }
+
+  .grid {
+    @include grid;
+  }
+}

@@ -1,0 +1,47 @@
+@mixin radio {
+  --_idle-color: 77.78% 0.008 253.87;
+  --_active-color: 47.53% 0.074 196.2;
+  --_text-color: 39.23% 0.021 274.33;
+
+  &__input:checked + &__caption::before {
+    border-color: oklch(var(--_active-color));
+  }
+  &__input:checked + &__caption::after {
+    opacity: 1;
+  }
+
+  &__caption {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    padding-inline-start: 1.75rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 160%;
+    color: oklch(var(--_text-color));
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      inset-block-start: .25rem;
+      inset-inline-start: -0.0625rem;
+      block-size: 1rem;
+      inline-size: 1rem;
+      border: .0625rem solid oklch(var(--_idle-color));
+      border-radius: 50%;
+      transition: background-color 300ms ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset-block-start: .5rem;
+      inset-inline-start: .1875rem;
+      block-size: .5rem;
+      inline-size: .5rem;
+      border-radius: 50%;
+      background-color: oklch(var(--_active-color));
+      opacity: 0;
+      transition: opacity 300ms ease-in-out;
+    }
+  }
+}

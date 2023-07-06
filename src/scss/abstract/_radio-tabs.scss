@@ -1,0 +1,28 @@
+@mixin radio-tab {
+  --_idle-color: 77.78% 0.008 253.87;
+  --_active-color: 47.53% 0.074 196.2;
+  --_text-color: 39.23% 0.021 274.33;
+  --_text-active-color: 100% 0 0;
+  --_border-radius: .25rem;
+
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  user-select: none;
+  cursor: pointer;
+  &__input:checked + &__caption {
+    background-color: oklch(var(--_active-color));
+    color: oklch(var(--_text-active-color));
+  }
+  &__caption {
+    display: inline-block;
+    padding-block: .3438rem;
+    padding-inline: 1rem;
+    border: .0625rem solid oklch(var(--_idle-color));
+    border-radius: var(--_border-radius);
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 150%;
+    color: oklch(var(--_text-color));
+  }
+}

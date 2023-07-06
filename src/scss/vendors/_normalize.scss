@@ -1,1 +1,23 @@
-@import '../../../node_modules/normalize.css/normalize';
+@layer reset.normalize {
+
+  // aos animation  styles
+  @import '../../../node_modules/aos/dist/aos';
+
+  //custom select styles
+  @import '../../../node_modules/choices.js/public/assets/styles/choices';
+
+  //graph modal styles
+  @import '../../../node_modules/graph-modal/dist/graph-modal.min';
+
+  //graph tabs styles
+  @import '../../../node_modules/graph-tabs/dist/graph-tabs.min';
+
+  //custom range slider styles
+  @import '../../../node_modules/nouislider/dist/nouislider.min';
+
+  //custom scroll styles
+  @import '../../../node_modules/simplebar/dist/simplebar.min';
+
+  // swiper js stiles
+  @import '../../../node_modules/normalize.css/normalize';
+}

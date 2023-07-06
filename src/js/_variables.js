@@ -4,3 +4,5 @@ export default {
   htmlEl: document.documentElement,
   bodyEl: document.body,
 }
+
+console.log('check vars file');
