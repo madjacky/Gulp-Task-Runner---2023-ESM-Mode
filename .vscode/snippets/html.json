@@ -33,7 +33,7 @@
       "  </svg>",
       "</button>"
     ],
-    "description": "Snippet for burger btn"
+    "description": "Snippet for Dark & Light Theme Switcher"
   },
   "burger": {
     "scope": "html",
