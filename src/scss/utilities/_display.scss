@@ -1,13 +1,11 @@
-@layer utilities {
-  .d-block {
-    @include d-block;
-  }
+.d-block {
+  @include d-block;
+}
 
-  .flex {
-    @include flex;
-  }
+.flex {
+  @include flex;
+}
 
-  .grid {
-    @include grid;
-  }
+.grid {
+  @include grid;
 }

@@ -1,16 +1,11 @@
  /* Set core body defaults */
- @layer base {
-  .page__body {
-    display: grid; // remove this style when you start your own project
-		align-content: center;
-		justify-content: center; // remove this style when you start your own project
-		place-content: center; // remove this style when you start your own project
-    min-block-size: 100vh;
-    min-block-size: 100dvh;
-    font-family: var(--ff-roboto);
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-  }
+ .page__body {
+  @include rid-all-center; // remove this style when you start your own project
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
+  font-family: var(--ff-roboto);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }

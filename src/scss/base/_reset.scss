@@ -1,119 +1,115 @@
-@layer reset {
+/* -------------------------------- */
+/* ----------- R e s et ----------- */
+/* -------------------------------- */
+/* Box sizing rules */
+html {
+  box-sizing: border-box;
+}
 
-  /* -------------------------------- */
-  /* ----------- R e s et ----------- */
-  /* -------------------------------- */
-  /* Box sizing rules */
-  html {
-    box-sizing: border-box;
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Percentage based heights */
+html, body {
+  block-size: 100%;
+}
+
+html {
+  color-scheme: light;
+
+  &:where([data-theme="dark"]) {
+    color-scheme: dark;
   }
+}
 
-  /* Set core root defaults */
+/* Table Styles */
+table {
+  border-collapse: collapse;
+}
+
+/* Remove default margin */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+picture,
+fieldset,
+pre,
+legend,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* make image easier to work with */
+img, picture, video, canvas, svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  object-fit: cover;
+}
+
+/* make svg hover easier */
+svg {
+  fill: currentColor;
+}
+
+/* make form easier to work with */
+input, button, textarea, select {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  font: inherit;
+}
+
+/* More sensible line-wrapping */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
+}
+
+/* reset link default syles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 
-  *, *:before, *:after {
-    box-sizing: inherit;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
 
-  /* Percentage based heights */
-  html, body {
-    height: 100%;
-  }
-
-  html {
-    color-scheme: light;
-
-    &:where([data-theme="dark"]) {
-      color-scheme: dark;
-    }
-  }
-
-  /* Table Styles */
-  table {
-    border-collapse: collapse;
-  }
-
-  /* Remove default margin */
-  body,
-  p,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  figure,
-  picture,
-  fieldset,
-  pre,
-  legend,
-  blockquote {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* make image easier to work with */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  /* make svg hover easier */
-  svg {
-    fill: currentColor;
-  }
-
-  /* make form easier to work with */
-  input, button, textarea, select {
-    letter-spacing: inherit;
-    word-spacing: inherit;
-    font: inherit;
-  }
-
-  /* More sensible line-wrapping */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-    hyphens: auto;
-  }
-
-  h1, h2, h3 {
-    text-wrap: balance;
-  }
-
-  /* reset link default syles */
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  /* A elements that don't have a class get default styles */
-  a:not([class]) {
-    text-decoration-skip-ink: auto;
-  }
-
-  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-  @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-      scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
-
-  /* React Framework Specific */
-  #root, #__next {
-    isolation: isolate;
-  }
-
+/* React Framework Specific */
+#root, #__next {
+  isolation: isolate;
 }

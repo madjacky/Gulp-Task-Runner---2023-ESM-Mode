@@ -6,8 +6,8 @@ import { mobileCheck } from './functions/mobile-check';
 console.log(mobileCheck())
 
 // Light & Dark Theme Swithcer
-import { initializeTheme } from './functions/light-dark-theme-switch';
-initializeTheme();
+// import { initializeTheme } from './functions/light-dark-theme-switch';
+// initializeTheme();
 
 // Determining the Screen Width
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
