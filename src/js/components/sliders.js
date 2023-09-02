@@ -1,4 +1,4 @@
-import Swiper from "swiper";
-import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper from "swiper";
+// import { Navigation, Pagination } from 'swiper/modules';
 
-Swiper.use([Navigation, Pagination]);
+// Swiper.use([Navigation, Pagination]);
