@@ -13,6 +13,8 @@ import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 
+import postcss from 'gulp-postcss';
+
 import svgSprite from 'gulp-svg-sprite';
 import svgmin from 'gulp-svgmin';
 import imagemin, {gifsicle, mozjpeg, optipng, svgo} from 'gulp-imagemin';
@@ -85,6 +87,7 @@ const styles = () => {
       })
     ))
     .pipe(sass())
+    .pipe(postcss())
     .pipe(autoPrefixer({
       cascade: false,
       grid: true,
@@ -107,6 +110,7 @@ const stylesBackend = () => {
       })
     ))
     .pipe(sass())
+    .pipe(postcss())
     .pipe(autoPrefixer({
       cascade: false,
       grid: true,
