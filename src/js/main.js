@@ -7,7 +7,7 @@ import Logger from './components/test';
 
 class Application {
   static main() {
-    Logger.log('hello world');
+    Logger.log('SWC-LOADER WORKS');
   }
 }
 

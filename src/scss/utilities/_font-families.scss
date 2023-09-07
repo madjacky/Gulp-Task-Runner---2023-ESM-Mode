@@ -1,7 +1,9 @@
-.ff-lato {
-  font-family: var(--ff-lato);
-}
+@layer utilities {
+  .ff-lato {
+    font-family: var(--ff-lato);
+  }
 
-.ff-roboto {
-  font-family: var(--ff-roboto);
+  .ff-roboto {
+    font-family: var(--ff-roboto);
+  }
 }

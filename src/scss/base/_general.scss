@@ -1,11 +1,13 @@
  /* Set core body defaults */
- .page__body {
-  @include grid-all-center; // remove this style when you start your own project
-  min-block-size: 100vh;
-  min-block-size: 100dvh;
-  font-family: var(--ff-roboto);
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  .page__body {
+    @include grid-all-center;
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    font-family: var(--ff-roboto);
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
 }

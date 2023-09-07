@@ -1,3 +1,5 @@
-.uppercase {
-  text-transform: uppercase;
+@layer utilities {
+  .uppercase {
+    text-transform: uppercase;
+  }
 }

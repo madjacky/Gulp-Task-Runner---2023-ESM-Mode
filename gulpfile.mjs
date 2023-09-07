@@ -3,7 +3,7 @@ const { src, dest, series, watch } = gulp;
 
 // import Modules
 import autoPrefixer from 'gulp-autoprefixer';
-import cleanCSS from 'gulp-clean-css';
+import cleanCSS from 'gulp-cssnano';
 import { deleteAsync } from 'del';
 
 import { create as browserSyncCreate } from 'browser-sync';
@@ -14,6 +14,8 @@ import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 
 import postcss from 'gulp-postcss';
+import postcssCascadeLayers from '@csstools/postcss-cascade-layers';
+import atImport from 'postcss-import';
 
 import svgSprite from 'gulp-svg-sprite';
 import svgmin from 'gulp-svgmin';
@@ -87,15 +89,13 @@ const styles = () => {
       })
     ))
     .pipe(sass())
-    .pipe(postcss())
+    .pipe(postcss(atImport, postcssCascadeLayers))
     .pipe(autoPrefixer({
       cascade: false,
       grid: true,
       // overrideBrowserslist: ["last 5 versions"]
     }))
-    .pipe(gulpif(isProd, cleanCSS({
-      level: 2
-    })))
+    .pipe(gulpif(isProd, cleanCSS({})))
     .pipe(dest(appPaths.buildCssFolder, { sourcemaps: '.' }))
     .pipe(browserSync.stream());
 }
@@ -110,11 +110,10 @@ const stylesBackend = () => {
       })
     ))
     .pipe(sass())
-    .pipe(postcss())
+    .pipe(postcss(atImport, postcssCascadeLayers))
     .pipe(autoPrefixer({
       cascade: false,
       grid: true,
-      // overrideBrowserslist: ["last 5 versions"]
     }))
     .pipe(dest(appPaths.buildCssFolder))
     .pipe(browserSync.stream());
@@ -140,18 +139,7 @@ const scripts = () => {
         rules: [{
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // use: {
-          //   loader: 'babel-loader',
-          //   options: {
-          //     presets: [
-          //       ['@babel/preset-env', {
-          //         targets: "defaults"
-          //       }]
-          //     ]
-          //   }
-          // }
           use: {
-            // Use `.swcrc` to configure swc
             loader: "swc-loader"
           }
         }]
@@ -184,20 +172,7 @@ const scriptsBackend = () => {
         rules: [{
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // Babel version
-          // use: {
-          //   loader: 'babel-loader',
-          //   options: {
-          //     presets: [
-          //       ['@babel/preset-env', {
-          //         targets: "defaults"
-          //       }]
-          //     ]
-          //   }
-          // }
-          // swc version
           use: {
-            // Use `.swcrc` to configure swc
             loader: "swc-loader"
           }
         }]
