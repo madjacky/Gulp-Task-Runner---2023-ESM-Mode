@@ -1,62 +1,22 @@
-@layer vendors, reset, variables, variables.typography, variables.colors, base, base.typography, base.helpers, pages, layouts, utilities, components;
+@use 'vendors';
+@use 'pages';
+@use 'layout';
+@use 'utilities';
+@use 'components';
+@use 'base';
 
-/* Import Abstracts */
-@import
-  'abstract/variables',
-  'abstract/colors',
-  'abstract/dark-theme',
-  'abstract/typography',
-  'abstract/breakpoints',
-  'abstract/burger',
-  'abstract/checkbox',
-  'abstract/display',
-  'abstract/flex-layout',
-  'abstract/font-face',
-  'abstract/functions',
-  'abstract/mixins',
-  'abstract/radio-tabs',
-  'abstract/radio',
-  'abstract/switch',
-  'abstract/theme-toggle';
-
-/* Import Vendors Styles */
-@import "vendors/vendors";
-
-/* Import Base Styles */
-@import
-  'base/reset',
-  'base/helpers',
-  'base/fonts',
-  'base/general';
-
-/* Import Utilities Styles */
-@import
-  'utilities/border-radius',
-  'utilities/box-shadow',
-  'utilities/centered',
-  'utilities/colors',
-  'utilities/containers',
-  'utilities/display',
-  'utilities/flow',
-  'utilities/font-families',
-  'utilities/font-sizes',
-  'utilities/round',
-  'utilities/uppercase';
-
-/* Import Components Styles */
-@import
-  'components/buttons',
-  'components/cards',
-  'components/form-fields',
-  'components/navigations',
-  'components/social-networks';
-
-/* Import Pages Styles Styles */
-@import
-  'pages/main-page',
-  'pages/contacts-page';
-
-/* Import Layout Styles */
-@import
-  'layout/header',
-  'layout/footer';
+@layer vendors,
+  reset.normalize,
+  reset,
+  base.typography,
+  variables.typography,
+  variables.colors,
+  theme.dark,
+  theme.light,
+  variables,
+  base,
+  helpers,
+  pages,
+  layouts,
+  components,
+  utilities;

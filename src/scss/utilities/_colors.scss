@@ -1,19 +1,8 @@
+@use '../abstracts/' as *;
+
 @layer utilities {
-  .bg-dark {
-    background-color: oklch(var(--dark-color));
-  }
-  .bg-accent {
-    background-color: oklch(var(--accent-color));
-  }
   .bg-light {
     background-color: oklch(var(--white-color));
-  }
-
-  .text-dark {
-    color: oklch(var(--dark-color));
-  }
-  .text-accent {
-    color: oklch(var(--accent-color));
   }
   .text-light {
     color: oklch(var(--white-color));

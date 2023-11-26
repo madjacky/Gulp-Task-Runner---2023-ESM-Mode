@@ -1,0 +1,14 @@
+@use 'colors' as *;
+
+/* ------------------------------- */
+/* ---------  Dark Theme --------- */
+/* ------------------------------ */
+@layer theme.dark {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --body-background-color: var(--pixel-fold-obsidian-color);
+      --body-primary-text-color: var(--pixel-7-snow-color);
+    }
+  }
+}

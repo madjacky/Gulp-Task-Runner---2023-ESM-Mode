@@ -1,4 +1,6 @@
-@layer base.helpers {
+@use '../abstracts/' as *;
+
+@layer helpers {
 
   .is-hidden {
     display: none !important; /* stylelint-disable-line declaration-no-important */
@@ -24,7 +26,7 @@
     border: none;
     outline: none;
     border-radius: 0;
-    background-color: var(--color-white);
+    background-color: oklch(var(--white-color));
 
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,

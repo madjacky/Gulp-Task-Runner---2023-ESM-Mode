@@ -1,5 +1,17 @@
-@layer base.typography {
-  @include font-face("Lato", "../../assets/fonts/Lato-Regular", 400, normal);
+@use '../abstracts/' as *;
 
-  @include font-face("Roboto", "../../assets/fonts/roboto-regular", 400, normal);
+@layer base.typography {
+  @include font-face("Flow Circular", "../../assets/fonts/FlowCircular-Regular", 400, normal);
+  @include font-face("GeistSans", "../../assets/fonts/Geist-Regular", 400, normal);
+  @include font-face("GeistSans", "../../assets/fonts/Geist-Bold", 700, normal);
+  @include font-face("GeistMono", "../../assets/fonts/GeistMono-Regular", 400, normal);
+  @include font-face("GeistMono", "../../assets/fonts/GeistMono-Bold", 700, normal);
+  @include font-face("Lato", "../../assets/fonts/Lato-Regular", 400, normal);
+  @include font-face("Lato", "../../assets/fonts/Lato-Bold", 700, normal);
+  @include font-face("Montserrat", "../../assets/fonts/Montserrat-Regular", 400, normal);
+  @include font-face("Montserrat", "../../assets/fonts/Montserrat-Bold", 700, normal);
+  @include font-face("Noto Sans", "../../assets/fonts/NotoSans-Regular", 400, normal);
+  @include font-face("Noto Sans", "../../assets/fonts/NotoSans-Bold", 700, normal);
+  @include font-face("Roboto", "../../assets/fonts/Roboto-Regular", 400, normal);
+  @include font-face("Roboto", "../../assets/fonts/Roboto-Bold", 700, normal);
 }

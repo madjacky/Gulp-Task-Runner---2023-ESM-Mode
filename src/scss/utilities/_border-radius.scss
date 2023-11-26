@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 @layer utilities {
   .rounded-sm {
     border-radius: var(--border-radius-sm);

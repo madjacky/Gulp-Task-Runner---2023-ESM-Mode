@@ -1,6 +1,6 @@
 {
   "name": "gulp-taskrunner-2023-esm-mode",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Gulp Task Runner for Web Layout - 2023 ESM Mode",
   "main": "index.js",
   "scripts": {

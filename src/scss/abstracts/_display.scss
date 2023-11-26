@@ -2,19 +2,31 @@
   display: block;
 }
 
+@mixin in-block {
+  display: inline-block;
+}
+
 @mixin grid {
   display: grid;
+}
+
+@mixin in-grid {
+  display: inline-grid;
 }
 
 @mixin grid-all-center {
   display: grid;
   align-content: center;
   justify-content: center;
-  place-content: center; 
+  place-content: center;
 }
 
 @mixin flex {
   display: flex;
+}
+
+@mixin in-flex {
+  display: inline-flex;
 }
 
 @mixin flex-wrap {

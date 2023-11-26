@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 @layer utilities {
   .site-container {
     overflow: hidden;

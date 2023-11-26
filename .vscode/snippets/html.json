@@ -13,7 +13,7 @@
     "scope": "html",
     "prefix": "g-theme-toggle",
     "body": [
-      "<button id=\"theme-toggle\" class=\"btn-reset icon-button theme-toggle\" title=\"Toggles light & dark\" aria-label=\"auto\" aria-live=\"polite\">",
+      "<button id=\"theme-toggle\" class=\"btn-reset icon-button theme-toggle\" type=\"button\" title=\"Toggles light & dark\" aria-label=\"auto\" aria-live=\"polite\">",
       "  <svg class=\"sun-and-moon\" aria-hidden=\"true\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\">",
       "     <mask class=\"moon\" id=\"moon-mask\">",
       "       <rect x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"white\" />",
@@ -39,7 +39,7 @@
     "scope": "html",
     "prefix": "g-burger",
     "body": [
-      "<button class=\"btn-reset burger\" aria-label=\"Open Menu\" aria-controls=\"primary-navigation\" aria-expanded=\"false\"  data-burger>",
+      "<button class=\"btn-reset burger\" type=\"button\" aria-label=\"Open Menu\" aria-controls=\"primary-navigation\" aria-expanded=\"false\"  data-burger>",
       "  <svg class=\"burger__icon\" fill=\"none\" width=\"32\" height=\"32\" vievbox=\"0 0 32 32\">",
       "     <rect class=\"burger__line burger__top\" width=\"24\" height=\"2\" x=\"4\" y=\"7.5\" rx=\"2\"></rect>",
       "     <rect class=\"burger__line burger__middle\" width=\"24\" height=\"2\" x=\"4\" y=\"15\" rx=\"2\"></rect>",
@@ -146,7 +146,7 @@
   "graph modal Btn": {
     "prefix": "g-graph-btn",
     "body": [
-      "<button class=\"btn-reset $1\" data-graph-path=\"$2\">$3</button>"
+      "<button class=\"btn-reset $1\" type=\"button\" data-graph-path=\"$2\">$3</button>"
     ],
     "description": "Snippet for graph-modal btn"
   },
@@ -155,7 +155,7 @@
     "body": [
       "<div class=\"graph-modal\">",
       "  <div class=\"graph-modal__container\" role=\"dialog\" aria-modal=\"true\" data-graph-target=\"$1\">",
-      "    <button class=\"btn-reset js-modal-close graph-modal__close\" aria-label=\"Close\"></button>",
+      "    <button class=\"btn-reset js-modal-close graph-modal__close\" type=\"button\" aria-label=\"Close\"></button>",
       "    <div class=\"graph-modal__content\">$2</div>",
       "  </div>",
       "</div>"
@@ -185,7 +185,7 @@
   "prefix": "g-tooltip",
     "body": [
       "<span class=\"tooltip\">",
-      "  <button class=\"tooltip__btn\" aria-describedby=\"$1\">$2</button>",
+      "  <button class=\"tooltip__btn\" type=\"button\" aria-describedby=\"$1\">$2</button>",
       "  <span class=\"tooltip__txt\" role=\"tooltip\" id=\"$1\">",
       "    <span class=\"visually-hidden\">Tooltip: </span>",
       "    $3",

@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 @layer utilities {
   .flow > *:where(:not(:first-child)) {
     margin-top: var(--flow-spacer, 1em);

@@ -1,12 +1,17 @@
- /* Set core body defaults */
+@use '../abstracts/' as *;
+/* Set core body defaults */
 @layer base {
   .page__body {
     @include grid-all-center;
     min-block-size: 100vh;
     min-block-size: 100dvh;
+    background-color: oklch(var(--body-background-color));
     font-family: var(--ff-roboto);
+    font-weight: 400;
+    font-size: .875rem;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    color: oklch(var(--body-primary-text-color));
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
   }

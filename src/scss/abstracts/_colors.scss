@@ -6,9 +6,6 @@
     /* ------------------------------ */
     /* --------  Base Colors -------- */
     /* ------------------------------ */
-    --dark-color: 16.23% 0.021 275.07;
-    --accent-color: 88.26% 0.049 277.68;
-
     --black-color: 0% 0 0;
     --white-color: 100% 0 0;
     --info-color: 64.99% 0.181 265.77;
@@ -17,14 +14,14 @@
     --success-color: 75.81% 0.148 171.1;
 
     /* ------------------------------- */
-    /* ---  Google Product Coloers --- */
+    /* ---  Google Product Colors --- */
     /* ------------------------------ */
 
     // Google Pixel Phones all Color
     --pixel-5-sorta-color: 71.64% 0.016 181.58;
 
     --pixel-fold-porcelain-color: 89.22% 0.015 70.87;
-    --pixel-fold-obsadian-color: 22.64% 0 0;
+    --pixel-fold-obsidian-color: 22.64% 0 0;
 
     --pixel-6a-charcoal-color: 31.77% 0.007 274.75;
     --pixel-6a-chalk-color: 94.91% 0 0;
@@ -32,7 +29,7 @@
 
     --pixel-7-lemongrass-color: 88.29% 0.084 116.09;
     --pixel-7-snow-color: 97.61% 0 0;
-    --pixel-7-obsadian-color: 26.45% 0 0;
+    --pixel-7-obsidian-color: 26.45% 0 0;
 
     --pixel-7pro-hazel-color: 63.7% 0.005 157.12;
     --pixel-7pro-snow-color: 92.8% 0 0;
@@ -42,6 +39,14 @@
     --pixel-7a-sea-color: 94.39% 0.021 236.76;
     --pixel-7a-charcoal-color: 47.64% 0.003 308.38;
     --pixel-7a-snow-color: 97.61% 0 0;
+
+    --pixel-8-hazel-color: 64.11% 0.004 145.53;
+    --pixel-8-obsidian-color: 24.35% 0 0;
+    --pixel-8-rose-color: 91.08% 0.027 50.85;
+
+    --pixel-8pro-bay-color: 84.49% 0.073 248.08;
+    --pixel-8pro-obsidian-color: 36.88% 0.007 240.02;
+    --pixel-8pro-porcelain-color: 90.31% 0.009 67.72;
 
     --pixel-watch-band-hazel-color: 54.49% 0.02 173.5;
     --pixel-watch-champagne-gold-color: 81.6% 0.061 54.4;
@@ -60,9 +65,9 @@
     --google-yellow: 80.77% 0.166 82.7;
     --google-green: 61.22% 0.151 154.1;
 
-    /* --------------------------------- */
-    /* --------  ColorPalletes -------- */
-    /* ------------------------------- */
+    /* ---------------------------------- */
+    /* --------  Color Palettes -------- */
+    /* -------------------------------- */
 
     // Slate
     --slate-50: 98.42% 0.003 247.86;
@@ -312,17 +317,17 @@
     --purple-950: 29.05% 0.143 302.72;
 
     // Fuchsia
-    --fuschia-50: 97.73% 0.017 320.06;
-    --fuschia-100: 95.2% 0.035966474160176905 318.851883433472;
-    --fuschia-200: 90.3% 0.073 319.62;
-    --fuschia-300: 83.3% 0.132 321.43;
-    --fuschia-400: 74.77% 0.207 322.16;
-    --fuschia-500: 66.68% 0.259 322.15;
-    --fuschia-600: 59.15% 0.257 322.9;
-    --fuschia-700: 51.8% 0.226 323.95;
-    --fuschia-800: 45.19% 0.192 324.59;
-    --fuschia-900: 40.07% 0.16 325.61;
-    --fuschia-950: 29.32% 0.131 325.66;
+    --fuchsia-50: 97.73% 0.017 320.06;
+    --fuchsia-100: 95.2% 0.035966474160176905 318.851883433472;
+    --fuchsia-200: 90.3% 0.073 319.62;
+    --fuchsia-300: 83.3% 0.132 321.43;
+    --fuchsia-400: 74.77% 0.207 322.16;
+    --fuchsia-500: 66.68% 0.259 322.15;
+    --fuchsia-600: 59.15% 0.257 322.9;
+    --fuchsia-700: 51.8% 0.226 323.95;
+    --fuchsia-800: 45.19% 0.192 324.59;
+    --fuchsia-900: 40.07% 0.16 325.61;
+    --fuchsia-950: 29.32% 0.131 325.66;
 
     // Pink
     --pink-50: 97.14% 0.014 343.2;
